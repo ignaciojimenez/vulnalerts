@@ -11,6 +11,6 @@ jobs:
     - uses: actions/checkout@master
     - uses: ignaciojimenez/vulnalerts@master
       env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_WEBHOOK: ${{ secrets.SLACK_VULN_WEBHOOK }}
     - name: done
       run: echo 'done'
